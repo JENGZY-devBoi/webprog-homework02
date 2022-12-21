@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+
+    <style>
+        /* 
+            COLORS:
+            - #92b1d8
+            - #514e40
+            - #ead67a
+            - #bf4f5a
+            - #d5d5d5
+        */
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #514e40;
+            color: #d5d5d5;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #92b1d8;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #92b1d8;
+        }
+
+        a:link {
+            color: #bf4f5a;
+        }
+
+        a:link,
+        a:visited {
+            color: #bf4f5a;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            margin-bottom: 20px;
+        }
+
+        /* --- section header --- */
+        .section-header {
+            margin: 20px 0 40px 0;
+        }
+
+        .section-header span {
+            color: #ead67a;
+        }
+
+        .title {
+            margin-bottom: 40px;
+        }
+
+        .details {
+            margin-bottom: 20px;
+        }
+
+        /* --- section classes --- */
+        .section-classes {
+            margin: 10px 0 40px 0;
+        }
+
+        .classes-list {
+            margin-left: 50px;
+        }
+
+        .classes-list li {
+            margin-bottom: 2px;
+        }
+        
+        /* --- section movies --- */
+        .section-movies {
+            margin: 10px 0 40px 0;
+        }
+
+        .movies-list {
+            margin-left: 50px;
+        }
+
+        .movies-list li {
+            margin-bottom: 2px;
+        }
+
+        /* --- section moods --- */
+        .section-moods {
+            margin: 10px 0 40px 0;
+        }
+
+        .mood-box {
+            display: flex;
+            gap: 30px;
+        }
+
+        .happy-mood,
+        .sad-mood {
+            display: flex;
+            gap: 10px;
+        }
+
+        .happy-mood img,
+        .sad-mood img {
+            width: 400px;
+            border-radius: 5px;
+            height: auto;
+        }
+
+        .emotion-text {
+            align-self: flex-end;
+        }
+
+        /* --- section neigbors --- */
+        .section-neighbors {
+            margin: 10px 0 40px 0;
+        }
+
+        .neighbors-list {
+            margin-left: 50px;
+        }
+
+        .neighbors-list li {
+            margin-bottom: 2px;
+        }
+
+        .section-neighbors span {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section-header">
+            <h1 class="title">About Victoria Kirst</h1>
+            <p class="details">
+                My name is Victoria and I am
+                <span> jolly, clumsy</span>, and
+                <span> four-eyed.</span>
+            </p>
+            <hr />
+        </section>
+
+        <section class="section-classes">
+            <h3 class="section-title">My Classes This Quarter</h3>
+            <ul class="classes-list">
+                <li>CSE 451 - Operating Systems</li>
+                <li>CSE 471 - Computer Design and Organization</li>
+                <li>PHYS 121 - Physics: Mechanics</li>
+                <li>CSE 498 - Research w/Prof. Luis Ceze</li>
+            </ul>
+        </section>
+
+        <section class="section-movies">
+            <h3 class="section-title">My Favorite Movies</h3>
+            <p class="section-subtitle">
+                <em>(I actually don't watch too many movies, so...here goes!)</em>
+            </p>
+            <ol class="movies-list">
+                <li>
+                    The Last 30 minutes of Forrest Gump
+                    (<a href="#">IMDB</a>)
+                </li>
+                <li>
+                    Star Trek Episode V with Zazu
+                    (<a href="#">IMDB</a>)
+                </li>
+                <li>
+                    Fight Club (not really, but I've seen like 3 movies total so this is my 3rd fave by technicality)
+                    (<a href="#">IMDB</a>)
+                </li>
+            </ol>
+        </section>
+
+        <section class="section-moods">
+            <h3 class="section-title">My Moods</h3>
+            <div class="mood-box">
+                <div class="happy-mood">
+                    <p class="emotion-text">Happy:</p>
+                    <img src="./images/happy-mood.jpeg" alt="happy mood">
+                </div>
+                <div class="sad-mood">
+                    <p class="emotion-text">Sad:</p>
+                    <img src="./images/sad-mood.jpeg" alt="sad mood">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-neighbors">
+            <h3 class="section-title">Fun Facts About My Neigbors</h3>
+            <ul class="neighbors-list">
+                <li>Sue Smith: <span>Effervescent</span> is a word that describer her.</li>
+                <li>Bill Thompson: Loves playing <span>Yu-Gi-Oh.</span></li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
